@@ -1,0 +1,4 @@
+Derive pressure from this: https://www.google.com/search?client=firefox-b-1-d&q=atmospheric+pressure+formula
+Get density by dividing by the temperature: https://byjus.com/physics/density-of-air/
+Move heat towards lower density
+Check heat loss formula to figure out how much is lost and move heat according to proportionality difference in density?
