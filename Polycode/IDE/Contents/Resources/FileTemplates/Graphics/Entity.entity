@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<entity>
+    <root polystring:id="" polystring:tags="" type="SceneEntityInstance" cR="1" cG="1" cB="1" cA="1" blendMode="0" sX="1" sY="1" sZ="1" rX="0" rY="0" rZ="0" pX="0" pY="0" pZ="0" bbX="0" bbY="0" bbZ="0.001">
+        <SceneEntityInstance filePath="/Users/ivansafrin/Documents/Polycode/MaterialDemo/Resources/scenes/gazebo.entity" />
+    </root>
+</entity>
