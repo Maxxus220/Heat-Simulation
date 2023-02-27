@@ -1,8 +1,15 @@
 #include <iostream>
 #include "Parameters.h"
+#include ".\bgfx\include\bgfx\bgfx.h"
+#include ""HeatSim.h""
+//#include "GLFW/glfw3.h"
+
+#define BGFX
+
 using namespace std;
 
 int main() {
+#ifndef BGFX
     using array_t = float (&) [XDIM][YDIM][ZDIM];
 
     // Initialize 3d array to represent space (temp)
@@ -30,11 +37,15 @@ int main() {
     // Repeat up to start simulation steps
 
     // Allow for looking at history of simulation and playback
+#endif
+
+    bgfx::init();
 
     return 0;
 }
 
 void clearArray(float (&array) [XDIM][YDIM][ZDIM]) {
+    #pragma omp parallel for
     for(int x = 0; x < XDIM; x++) {
     for(int y = 0; y < YDIM; y++) {
     for(int z = 0; z < ZDIM; z++) {
