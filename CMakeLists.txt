@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(HeatSim)
+set(Easy3D_DIR ./gfx/Easy3D/Release/)
+set(CMAKE_CXX_STANDARD 11)                       
+find_package(Easy3D COMPONENTS viewer REQUIRED) 
+add_executable(HeatSim HeatSim.cpp)                    
+target_link_libraries(HeatSim easy3d::viewer) 

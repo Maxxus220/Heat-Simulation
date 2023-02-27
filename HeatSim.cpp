@@ -1,14 +1,15 @@
 #include <iostream>
 #include "Parameters.h"
-#include "bgfx.h"
+#include <easy3d/viewer/viewer.h>
+#include <easy3d/util/initializer.h>
 #include "HeatSim.h"
 
-#define BGFX
+#define EZ3D
 
 using namespace std;
 
 int main() {
-#ifndef BGFX
+#ifndef EZ3D
     using array_t = float (&) [XDIM][YDIM][ZDIM];
 
     // Initialize 3d array to represent space (temp)
@@ -38,8 +39,10 @@ int main() {
     // Allow for looking at history of simulation and playback
 #endif
 
-    bgfx::init();
-
+    easy3d::initialize();
+    easy3d::Viewer viewer("Test");
+    return viewer.run();
+    
     return 0;
 }
 
