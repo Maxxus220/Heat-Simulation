@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -L
+CXXFLAGS = -std=c++11 -Wall -L./gfx/bgfx/.build/bin/ -l*.a
 
 SRC = $(wildcard *.cpp)
 OBJ = $(SRC:.cpp=.o)
