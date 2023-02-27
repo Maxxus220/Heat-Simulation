@@ -1,18 +1,20 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -L./gfx/bgfx/.build/bin/ -l*.a
+CXXFLAGS = -std=c++11 -Wall
+INCLUDES = -I./gfx/bgfx/include/bgfx/ -I./gfx/bimg/include/ -I./gfx/bx/include/bx/ -I./gfx/bx/include/tinystl/ -I./gfx/bx/include/compat/linux/
+LINKING = ./gfx/bgfx/.build/linux64_gcc/bin/*.a
 
 SRC = $(wildcard *.cpp)
 OBJ = $(SRC:.cpp=.o)
 
-TARGET = HeatSim.exe
+TARGET = HeatSim
 
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(INCLUDES) $(CXXFLAGS) $^ $(LINKING) -o $@
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(INCLUDES) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ) $(TARGET)

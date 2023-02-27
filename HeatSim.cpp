@@ -1,8 +1,7 @@
 #include <iostream>
 #include "Parameters.h"
-#include ".\bgfx\include\bgfx\bgfx.h"
-#include ""HeatSim.h""
-//#include "GLFW/glfw3.h"
+#include "bgfx.h"
+#include "HeatSim.h"
 
 #define BGFX
 
