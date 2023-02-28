@@ -73,15 +73,15 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: CMakeFiles/HeatSim.dir/flags.make
 CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp
 CMakeFiles/HeatSim.dir/HeatSim.cpp.o: CMakeFiles/HeatSim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxxus220/Projects/Heat-Simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HeatSim.dir/HeatSim.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeatSim.dir/HeatSim.cpp.o -MF CMakeFiles/HeatSim.dir/HeatSim.cpp.o.d -o CMakeFiles/HeatSim.dir/HeatSim.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeatSim.dir/HeatSim.cpp.o -MF CMakeFiles/HeatSim.dir/HeatSim.cpp.o.d -o CMakeFiles/HeatSim.dir/HeatSim.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp
 
 CMakeFiles/HeatSim.dir/HeatSim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HeatSim.dir/HeatSim.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp > CMakeFiles/HeatSim.dir/HeatSim.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp > CMakeFiles/HeatSim.dir/HeatSim.cpp.i
 
 CMakeFiles/HeatSim.dir/HeatSim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HeatSim.dir/HeatSim.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp -o CMakeFiles/HeatSim.dir/HeatSim.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp -o CMakeFiles/HeatSim.dir/HeatSim.cpp.s
 
 # Object files for target HeatSim
 HeatSim_OBJECTS = \

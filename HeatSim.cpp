@@ -7,6 +7,7 @@
 #define EZ3D
 
 using namespace std;
+using namespace easy3d;
 
 int main() {
 #ifndef EZ3D
@@ -41,9 +42,15 @@ int main() {
 
     easy3d::initialize();
     easy3d::Viewer viewer("Test");
+
+    if(!viewer.add_model("../resources/cube.ply")) {
+        cout << "Failed to load model file" << endl;
+        return EXIT_FAILURE;
+    }
+
     return viewer.run();
     
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 void clearArray(float (&array) [XDIM][YDIM][ZDIM]) {
