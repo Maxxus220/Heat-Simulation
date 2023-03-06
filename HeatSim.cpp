@@ -2,12 +2,19 @@
 #include "Parameters.h"
 #include <easy3d/viewer/viewer.h>
 #include <easy3d/util/initializer.h>
+#include <easy3d/core/surface_mesh.h>
+#include <easy3d/fileio/surface_mesh_io.h>
 #include "HeatSim.h"
+#include "RenderUtils.h"
 
 #define EZ3D
 
 using namespace std;
 using namespace easy3d;
+
+namespace mfresources {
+    SurfaceMesh cube;
+}
 
 int main() {
 #ifndef EZ3D
@@ -40,11 +47,22 @@ int main() {
     // Allow for looking at history of simulation and playback
 #endif
 
-    easy3d::initialize();
-    easy3d::Viewer viewer("Test");
+    initialize();
+    Viewer viewer("Test");
 
-    if(!viewer.add_model("../resources/cube.ply")) {
+    // Load in cube resource
+    if(!io::load_ply("../resources/cube.ply", &mfresources::cube)) {
         cout << "Failed to load model file" << endl;
+        return EXIT_FAILURE;
+    }
+
+    // if(!viewer.add_model(&mfresources::cube)) {
+    //     cout << "Failed to add cube to viewer" << endl;
+    //     return EXIT_FAILURE;
+    // }
+
+    if(!add_cube(&viewer, 3, 3, 1)) {
+        cout << "Failed to add cube to viewer" << endl;
         return EXIT_FAILURE;
     }
 

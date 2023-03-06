@@ -361,5 +361,10 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/polygon.h
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include/easy3d/core/export.h
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/util/initializer.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/surface_mesh.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/model.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/property.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/fileio/surface_mesh_io.h
  /home/maxxus220/Projects/Heat-Simulation/HeatSim.h
+ /home/maxxus220/Projects/Heat-Simulation/RenderUtils.h
 

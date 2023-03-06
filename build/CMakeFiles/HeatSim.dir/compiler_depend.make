@@ -360,7 +360,12 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
   ../gfx/Easy3D/easy3d/core/polygon.h \
   ../gfx/Easy3D/Release/include/easy3d/core/export.h \
   ../gfx/Easy3D/easy3d/util/initializer.h \
-  ../HeatSim.h
+  ../gfx/Easy3D/easy3d/core/surface_mesh.h \
+  ../gfx/Easy3D/easy3d/core/model.h \
+  ../gfx/Easy3D/easy3d/core/property.h \
+  ../gfx/Easy3D/easy3d/fileio/surface_mesh_io.h \
+  ../HeatSim.h \
+  ../RenderUtils.h
 
 
 ../HeatSim.h:
@@ -410,6 +415,8 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
 /usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/c++/11/bit:
+
+../RenderUtils.h:
 
 /usr/include/c++/11/bits/align.h:
 
@@ -478,6 +485,8 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
+../gfx/Easy3D/easy3d/core/model.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
@@ -1019,6 +1028,8 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
 
 /usr/include/c++/11/bits/locale_conv.h:
 
+../gfx/Easy3D/easy3d/fileio/surface_mesh_io.h:
+
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
@@ -1041,6 +1052,8 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
+../gfx/Easy3D/easy3d/core/property.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/c++/11/string:
@@ -1054,6 +1067,8 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: ../HeatSim.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 ../gfx/Easy3D/3rd_party/easyloggingpp/easylogging++.h:
+
+../gfx/Easy3D/easy3d/core/surface_mesh.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
