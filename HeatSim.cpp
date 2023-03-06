@@ -57,11 +57,6 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    // if(!viewer.add_model(&mfresources::cube)) {
-    //     cout << "Failed to add cube to viewer" << endl;
-    //     return EXIT_FAILURE;
-    // }
-
     if(!add_cube(&viewer, 0, 0, 1)) {
         return EXIT_FAILURE;
     }
