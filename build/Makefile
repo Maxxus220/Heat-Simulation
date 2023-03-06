@@ -177,6 +177,30 @@ RenderUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.s
 .PHONY : RenderUtils.cpp.s
 
+TransparencyViewer.o: TransparencyViewer.cpp.o
+.PHONY : TransparencyViewer.o
+
+# target to build an object file
+TransparencyViewer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o
+.PHONY : TransparencyViewer.cpp.o
+
+TransparencyViewer.i: TransparencyViewer.cpp.i
+.PHONY : TransparencyViewer.i
+
+# target to preprocess a source file
+TransparencyViewer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.i
+.PHONY : TransparencyViewer.cpp.i
+
+TransparencyViewer.s: TransparencyViewer.cpp.s
+.PHONY : TransparencyViewer.s
+
+# target to generate assembly for a file
+TransparencyViewer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.s
+.PHONY : TransparencyViewer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... RenderUtils.o"
 	@echo "... RenderUtils.i"
 	@echo "... RenderUtils.s"
+	@echo "... TransparencyViewer.o"
+	@echo "... TransparencyViewer.i"
+	@echo "... TransparencyViewer.s"
 .PHONY : help
 
 

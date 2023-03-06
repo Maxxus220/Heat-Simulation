@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 SET(SOURCES 
     "HeatSim.cpp"
     "RenderUtils.cpp"
+    "TransparencyViewer.cpp"
 )
 
 find_package(Easy3D COMPONENTS viewer REQUIRED) 

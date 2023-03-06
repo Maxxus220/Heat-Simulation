@@ -7,6 +7,7 @@
 #include "Resources.h"
 #include "HeatSim.h"
 #include "RenderUtils.h"
+#include "TransparencyViewer.h"
 
 #define EZ3D
 
@@ -49,7 +50,7 @@ int main() {
 #endif
 
     initialize();
-    Viewer viewer("Test");
+    TransparencyViewer viewer("Test");
 
     // Load in cube resource
     if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {

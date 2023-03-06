@@ -1,9 +1,8 @@
-CMakeFiles/HeatSim.dir/RenderUtils.cpp.o: \
- /home/maxxus220/Projects/Heat-Simulation/RenderUtils.cpp \
+CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o: \
+ /home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.cpp \
  /usr/include/stdc-predef.h \
- /home/maxxus220/Projects/Heat-Simulation/Resources.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/surface_mesh.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/model.h \
+ /home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -293,16 +292,22 @@ CMakeFiles/HeatSim.dir/RenderUtils.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/quat.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/polygon.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include/easy3d/core/export.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/property.h \
- /home/maxxus220/Projects/Heat-Simulation/RenderUtils.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/dual_depth_peeling.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/transparency.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable_triangles.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/state.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/renderer.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/point_cloud.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/model.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/property.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/surface_mesh.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/random.h \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/camera.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/signal.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/frame.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/constraint.h

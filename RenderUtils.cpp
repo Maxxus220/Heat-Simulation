@@ -23,5 +23,13 @@ Model* add_cube(Viewer* viewer, int x, int y, int z) {
         new_cube->points()[i].z += z * GRID_SIZE;
     }
 
+    // Make faces transparent
+    auto faces = new_cube->renderer()->get_triangles_drawable("faces");
+    if(faces) {
+        faces->set_opacity(0.1f); 
+        cout << "Opacity: " << faces->opacity() << endl;
+        viewer->update();
+    }
+
     return new_cube;
 }
