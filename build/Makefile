@@ -153,6 +153,30 @@ HeatSim.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/HeatSim.cpp.s
 .PHONY : HeatSim.cpp.s
 
+RenderUtils.o: RenderUtils.cpp.o
+.PHONY : RenderUtils.o
+
+# target to build an object file
+RenderUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.o
+.PHONY : RenderUtils.cpp.o
+
+RenderUtils.i: RenderUtils.cpp.i
+.PHONY : RenderUtils.i
+
+# target to preprocess a source file
+RenderUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.i
+.PHONY : RenderUtils.cpp.i
+
+RenderUtils.s: RenderUtils.cpp.s
+.PHONY : RenderUtils.s
+
+# target to generate assembly for a file
+RenderUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.s
+.PHONY : RenderUtils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... HeatSim.o"
 	@echo "... HeatSim.i"
 	@echo "... HeatSim.s"
+	@echo "... RenderUtils.o"
+	@echo "... RenderUtils.i"
+	@echo "... RenderUtils.s"
 .PHONY : help
 
 

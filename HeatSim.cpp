@@ -4,6 +4,7 @@
 #include <easy3d/util/initializer.h>
 #include <easy3d/core/surface_mesh.h>
 #include <easy3d/fileio/surface_mesh_io.h>
+#include "Resources.h"
 #include "HeatSim.h"
 #include "RenderUtils.h"
 
@@ -13,7 +14,7 @@ using namespace std;
 using namespace easy3d;
 
 namespace mfresources {
-    SurfaceMesh cube;
+    SurfaceMesh g_cube;
 }
 
 int main() {
@@ -51,7 +52,7 @@ int main() {
     Viewer viewer("Test");
 
     // Load in cube resource
-    if(!io::load_ply("../resources/cube.ply", &mfresources::cube)) {
+    if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
         cout << "Failed to load model file" << endl;
         return EXIT_FAILURE;
     }
@@ -61,8 +62,11 @@ int main() {
     //     return EXIT_FAILURE;
     // }
 
-    if(!add_cube(&viewer, 3, 3, 1)) {
-        cout << "Failed to add cube to viewer" << endl;
+    if(!add_cube(&viewer, 0, 0, 1)) {
+        return EXIT_FAILURE;
+    }
+
+    if(!add_cube(&viewer, 0, 0, 0)) {
         return EXIT_FAILURE;
     }
 

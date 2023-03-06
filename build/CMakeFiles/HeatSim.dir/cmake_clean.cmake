@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HeatSim.dir/HeatSim.cpp.o"
   "CMakeFiles/HeatSim.dir/HeatSim.cpp.o.d"
+  "CMakeFiles/HeatSim.dir/RenderUtils.cpp.o"
+  "CMakeFiles/HeatSim.dir/RenderUtils.cpp.o.d"
   "HeatSim"
   "HeatSim.pdb"
 )
