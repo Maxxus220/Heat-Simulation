@@ -760,7 +760,8 @@ CMakeFiles/HeatSim.dir/RenderUtils.cpp.o: ../RenderUtils.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
   /usr/include/c++/11/numeric \
-  /usr/include/c++/11/bits/stl_numeric.h
+  /usr/include/c++/11/bits/stl_numeric.h \
+  ../Parameters.h
 
 CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o: ../TransparencyViewer.cpp \
   /usr/include/stdc-predef.h \

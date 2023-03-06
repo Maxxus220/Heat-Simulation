@@ -1,9 +1,12 @@
 #include "Resources.h"
 #include "RenderUtils.h"
+#include "Parameters.h"
 
 using namespace std;
 using namespace easy3d;
 
+void position_model(Model* model, int x, int y, int z);
+void make_model_transparent(Model* model);
 
 Model* add_cube(Viewer* viewer, int x, int y, int z) {
     SurfaceMesh* new_cube_mesh = new SurfaceMesh(mfresources::g_cube);
@@ -15,21 +18,29 @@ Model* add_cube(Viewer* viewer, int x, int y, int z) {
         return new_cube;
     }
 
-    // Add x,y,z to each vertice
-    const int GRID_SIZE = 2;
-    for(int i = 0; i < dynamic_cast<SurfaceMesh*>(new_cube)->vertices_size(); i++) {
-        new_cube->points()[i].x += x * GRID_SIZE;
-        new_cube->points()[i].y += y * GRID_SIZE;
-        new_cube->points()[i].z += z * GRID_SIZE;
-    }
+    position_model(new_cube, x, y, z);
 
-    // Make faces transparent
-    auto faces = new_cube->renderer()->get_triangles_drawable("faces");
-    if(faces) {
-        faces->set_opacity(0.1f); 
-        cout << "Opacity: " << faces->opacity() << endl;
-        viewer->update();
-    }
+
+    make_model_transparent(new_cube);
+
+    dynamic_cast<SurfaceMesh*>(new_cube)->add_model_property<vec4>("Color", DEFAULT_COLOR);
+    
 
     return new_cube;
+}
+
+void position_model(Model* model, int x, int y, int z) {
+    const int GRID_SIZE = 2;
+    for(int i = 0; i < dynamic_cast<SurfaceMesh*>(model)->vertices_size(); i++) {
+        model->points()[i].x += x * GRID_SIZE;
+        model->points()[i].y += y * GRID_SIZE;
+        model->points()[i].z += z * GRID_SIZE;
+    }
+}
+
+void make_model_transparent(Model* model) {
+    auto faces = model->renderer()->get_triangles_drawable("faces");
+    if(faces) {
+        faces->set_opacity(OPACITY); 
+    }
 }

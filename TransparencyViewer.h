@@ -6,6 +6,7 @@
 #include <easy3d/renderer/renderer.h>
 #include <easy3d/renderer/camera.h>
 #include <easy3d/core/model.h>
+#include <easy3d/renderer/state.h>
 
 
 class TransparencyViewer : public easy3d::Viewer
