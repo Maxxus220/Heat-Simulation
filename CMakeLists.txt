@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.22.1)
+set(CMAKE_CXX_STANDARD 11)       
+
 project(HeatSim)
 
 set(Easy3D_DIR ./gfx/Easy3D/Release/)
-set(CMAKE_CXX_STANDARD 11)       
+
 SET(SOURCES 
     "HeatSim.cpp"
     "RenderUtils.cpp"
@@ -11,5 +13,11 @@ SET(SOURCES
 )
 
 find_package(Easy3D COMPONENTS viewer REQUIRED) 
-add_executable(HeatSim ${SOURCES})                    
+find_package(glfw3 REQUIRED)
+
+include_directories(${GLFW_INCLUDE_DIRS})
+
+add_executable(HeatSim ${SOURCES})           
+
 target_link_libraries(HeatSim easy3d::viewer) 
+target_link_libraries(HeatSim ${GLFW_LIBRARIES})

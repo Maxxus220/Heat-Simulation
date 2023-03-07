@@ -1192,6 +1192,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/maxxus220/Projects/Heat-Simulation"
+		},
+		{
+			"name" : "glfw3_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for glfw3."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/glfw3"
 		}
 	],
 	"kind" : "cache",
