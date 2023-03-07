@@ -1,4 +1,10 @@
 #include "TransparencyViewer.h"
+#include <easy3d/renderer/drawable_triangles.h>
+#include <easy3d/renderer/renderer.h>
+#include <easy3d/renderer/camera.h>
+#include <easy3d/core/model.h>
+#include <easy3d/renderer/state.h>
+#include <3rd_party/glfw/include/GLFW/glfw3.h>
 
 using namespace easy3d;
 

@@ -1,6 +1,9 @@
 #include "Resources.h"
 #include "RenderUtils.h"
 #include "Parameters.h"
+#include <easy3d/core/surface_mesh.h>
+#include <easy3d/renderer/drawable_triangles.h>
+#include <easy3d/renderer/renderer.h>
 
 using namespace std;
 using namespace easy3d;

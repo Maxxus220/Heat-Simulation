@@ -8,6 +8,7 @@
 #include "HeatSim.h"
 #include "RenderUtils.h"
 #include "TransparencyViewer.h"
+#include "SimUtils.h"
 
 #define EZ3D
 
@@ -73,12 +74,12 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-void clearArray(float (&array) [XDIM][YDIM][ZDIM]) {
+void clearArray(Model* (&array) [XDIM][YDIM][ZDIM]) {
     #pragma omp parallel for
     for(int x = 0; x < XDIM; x++) {
     for(int y = 0; y < YDIM; y++) {
     for(int z = 0; z < ZDIM; z++) {
-        array[x][y][z] = 0;
+        array[x][y][z] = nullptr;
     }
     }
     }
@@ -94,7 +95,7 @@ bool checkSingleCoordinate(int coord, int dimSize) {
     return coord >= 0 && coord < dimSize;
 }
 
-void enterDataPoints(float (&array) [XDIM][YDIM][ZDIM]) {
+void enterDataPoints(Model* (&array) [XDIM][YDIM][ZDIM]) {
     int* point = new int[3];
     point[0] = 0;
     point[1] = 0;
@@ -119,6 +120,11 @@ void enterDataPoints(float (&array) [XDIM][YDIM][ZDIM]) {
         cout << "Temperature: ";
         cin >> temperature;
 
-        if(checkCoordinates(point)) array[point[0]][point[1]][point[2]] = temperature;
+        if(checkCoordinates(point)) {
+            set_heat(temperature, point[0], point[1], point[2], array);
+        }
+        else {
+            cout << "Invalid coordinates, point not set" << endl;
+        }
     }
 }
