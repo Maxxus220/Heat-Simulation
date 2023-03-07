@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Parameters.h"
-#include <easy3d/viewer/viewer.h>
 #include <easy3d/util/initializer.h>
 #include <easy3d/core/surface_mesh.h>
 #include <easy3d/fileio/surface_mesh_io.h>
@@ -29,24 +28,23 @@ int main() {
     easy3d::initialize();
     TransparencyViewer viewer("Heat Simulation");
     viewer.set_background_color(BACKGROUND_COLOR);
+    // Load in cube resource
+    if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
+        cout << "Failed to load model file" << endl;
+        return EXIT_FAILURE;
+    }
 
     // Initialize 3d array to represent space (temp)
     Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
     mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
     clearArray(*mfsim::heatSim);
-    // TODO: Need to set up the models and add them to the viewer and Model grid using add_sim_cube
+    initializeArray(&viewer, *mfsim::heatSim);
 
     // Allow users to enter heat data points
     enterDataPoints(*mfsim::heatSim);
 
     // Run easy3D (it will handle simulation with key events; see TransparencyViewer.cpp TransparencyViewer::key_press_event)
     return viewer.run();
-
-    // // Load in cube resource
-    // if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
-    //     cout << "Failed to load model file" << endl;
-    //     return EXIT_FAILURE;
-    // }
 
     // if(!add_cube(&viewer, 0, 0, 1)) {
     //     return EXIT_FAILURE;
@@ -66,6 +64,16 @@ void clearArray(Model* (&array) [XDIM][YDIM][ZDIM]) {
     for(int y = 0; y < YDIM; y++) {
     for(int z = 0; z < ZDIM; z++) {
         array[x][y][z] = nullptr;
+    }
+    }
+    }
+}
+
+void initializeArray(Viewer* viewer, Model* (&array) [XDIM][YDIM][ZDIM]) {
+    for(int x = 0; x < XDIM; x++) {
+    for(int y = 0; y < YDIM; y++) {
+    for(int z = 0; z < ZDIM; z++) {
+        add_sim_cube(viewer, x, y, z, array);
     }
     }
     }
