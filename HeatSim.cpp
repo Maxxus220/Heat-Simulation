@@ -27,13 +27,14 @@ namespace mfsim {
 int main() {
     // Setup easy3D
     easy3d::initialize();
-    TransparencyViewer viewer("Test");
+    TransparencyViewer viewer("Heat Simulation");
     viewer.set_background_color(BACKGROUND_COLOR);
 
     // Initialize 3d array to represent space (temp)
     Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
     mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
     clearArray(*mfsim::heatSim);
+    // TODO: Need to set up the models and add them to the viewer using add_sim_cube
 
     // Allow users to enter heat data points
     enterDataPoints(*mfsim::heatSim);
