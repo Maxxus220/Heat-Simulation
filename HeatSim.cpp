@@ -66,6 +66,8 @@ int main() {
         return EXIT_FAILURE;
     }
 
+    viewer.set_background_color(BACKGROUND_COLOR);
+
     return viewer.run();
     
     return EXIT_SUCCESS;
