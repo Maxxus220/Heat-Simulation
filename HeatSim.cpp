@@ -14,14 +14,19 @@
 
 using namespace std;
 using namespace easy3d;
+using array_t = Model* (&) [XDIM][YDIM][ZDIM];
+
 
 namespace mfresources {
     SurfaceMesh g_cube;
 }
 
+namespace mfsim {
+    array_t heatSim;
+}
+
 int main() {
 #ifndef EZ3D
-    using array_t = float (&) [XDIM][YDIM][ZDIM];
 
     // Initialize 3d array to represent space (temp)
     float * tempsBeforeRaw = new float[XDIM*YDIM*ZDIM];
