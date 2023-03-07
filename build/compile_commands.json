@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/maxxus220/Projects/Heat-Simulation/build",
-  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -std=gnu++11 -o CMakeFiles/HeatSim.dir/HeatSim.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp",
+  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -fopenmp -std=gnu++11 -o CMakeFiles/HeatSim.dir/HeatSim.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp",
   "file": "/home/maxxus220/Projects/Heat-Simulation/HeatSim.cpp"
 },
 {
   "directory": "/home/maxxus220/Projects/Heat-Simulation/build",
-  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -std=gnu++11 -o CMakeFiles/HeatSim.dir/RenderUtils.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/RenderUtils.cpp",
+  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -fopenmp -std=gnu++11 -o CMakeFiles/HeatSim.dir/RenderUtils.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/RenderUtils.cpp",
   "file": "/home/maxxus220/Projects/Heat-Simulation/RenderUtils.cpp"
 },
 {
   "directory": "/home/maxxus220/Projects/Heat-Simulation/build",
-  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -std=gnu++11 -o CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.cpp",
+  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -fopenmp -std=gnu++11 -o CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.cpp",
   "file": "/home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.cpp"
 },
 {
   "directory": "/home/maxxus220/Projects/Heat-Simulation/build",
-  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -std=gnu++11 -o CMakeFiles/HeatSim.dir/SimUtils.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/SimUtils.cpp",
+  "command": "/usr/bin/g++ -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE_ALL -DELPP_NO_DEFAULT_LOG_FILE -DELPP_STL_LOGGING -DELPP_THREAD_SAFE -DEasy3D_RESOURCE_DIR=\\\"/home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/resources\\\" -DGLEW_NO_GLU -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include -g -fopenmp -std=gnu++11 -o CMakeFiles/HeatSim.dir/SimUtils.cpp.o -c /home/maxxus220/Projects/Heat-Simulation/SimUtils.cpp",
   "file": "/home/maxxus220/Projects/Heat-Simulation/SimUtils.cpp"
 }
 ]

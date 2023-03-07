@@ -149,6 +149,8 @@ HeatSim: /usr/lib/x86_64-linux-gnu/libGLX.so
 HeatSim: ../gfx/Easy3D/Release/lib/libeasy3d_fileio.so.2.5.2
 HeatSim: ../gfx/Easy3D/Release/lib/libeasy3d_core.so.2.5.2
 HeatSim: ../gfx/Easy3D/Release/lib/libeasy3d_util.so.2.5.2
+HeatSim: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
+HeatSim: /usr/lib/x86_64-linux-gnu/libpthread.a
 HeatSim: CMakeFiles/HeatSim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxxus220/Projects/Heat-Simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HeatSim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HeatSim.dir/link.txt --verbose=$(VERBOSE)

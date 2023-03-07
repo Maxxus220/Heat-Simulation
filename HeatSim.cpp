@@ -10,11 +10,11 @@
 #include "TransparencyViewer.h"
 #include "SimUtils.h"
 
-#define EZ3D
+// #define EZ3D
 
 using namespace std;
 using namespace easy3d;
-using array_t = Model* (&) [XDIM][YDIM][ZDIM];
+using array_t = Model* (*) [XDIM][YDIM][ZDIM];
 
 
 namespace mfresources {
@@ -23,21 +23,18 @@ namespace mfresources {
 
 namespace mfsim {
     array_t heatSim;
+
 }
 
 int main() {
 #ifndef EZ3D
-
     // Initialize 3d array to represent space (temp)
-    float * tempsBeforeRaw = new float[XDIM*YDIM*ZDIM];
-    float * tempsAfterRaw = new float[XDIM*YDIM*ZDIM];
-    array_t tempsBefore = reinterpret_cast<array_t>(tempsBeforeRaw);
-    array_t tempsAfter = reinterpret_cast<array_t>(tempsAfterRaw);
-    clearArray(tempsBefore);
-    clearArray(tempsAfter);
+    Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
+    mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
+    clearArray(*mfsim::heatSim);
 
     // Allow users to enter heat data points
-    enterDataPoints(tempsBefore);
+    enterDataPoints(*mfsim::heatSim);
 
     // Start simulation steps
 

@@ -6,5 +6,5 @@ CXX_DEFINES = -DELPP_AS_DLL -DELPP_DISABLE_DEFAULT_CRASH_HANDLING -DELPP_FEATURE
 
 CXX_INCLUDES = -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D -isystem /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include
 
-CXX_FLAGS = -g -std=gnu++11
+CXX_FLAGS = -g -fopenmp -std=gnu++11
 

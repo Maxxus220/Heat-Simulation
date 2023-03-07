@@ -25,13 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 20,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -43,6 +49,10 @@
 			[
 				{
 					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fopenmp"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -166,6 +176,14 @@
 			},
 			{
 				"fragment" : "../gfx/Easy3D/Release/lib/libeasy3d_util.so.2.5.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpthread.a",
 				"role" : "libraries"
 			}
 		],
