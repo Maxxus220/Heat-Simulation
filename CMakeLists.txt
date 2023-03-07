@@ -7,6 +7,7 @@ SET(SOURCES
     "HeatSim.cpp"
     "RenderUtils.cpp"
     "TransparencyViewer.cpp"
+    "SimUtils.cpp"
 )
 
 find_package(Easy3D COMPONENTS viewer REQUIRED) 

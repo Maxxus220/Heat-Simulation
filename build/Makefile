@@ -177,6 +177,30 @@ RenderUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.s
 .PHONY : RenderUtils.cpp.s
 
+SimUtils.o: SimUtils.cpp.o
+.PHONY : SimUtils.o
+
+# target to build an object file
+SimUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimUtils.cpp.o
+.PHONY : SimUtils.cpp.o
+
+SimUtils.i: SimUtils.cpp.i
+.PHONY : SimUtils.i
+
+# target to preprocess a source file
+SimUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimUtils.cpp.i
+.PHONY : SimUtils.cpp.i
+
+SimUtils.s: SimUtils.cpp.s
+.PHONY : SimUtils.s
+
+# target to generate assembly for a file
+SimUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimUtils.cpp.s
+.PHONY : SimUtils.cpp.s
+
 TransparencyViewer.o: TransparencyViewer.cpp.o
 .PHONY : TransparencyViewer.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... RenderUtils.o"
 	@echo "... RenderUtils.i"
 	@echo "... RenderUtils.s"
+	@echo "... SimUtils.o"
+	@echo "... SimUtils.i"
+	@echo "... SimUtils.s"
 	@echo "... TransparencyViewer.o"
 	@echo "... TransparencyViewer.i"
 	@echo "... TransparencyViewer.s"
