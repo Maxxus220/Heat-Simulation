@@ -113,4 +113,6 @@ void enterDataPoints(Model* (&array) [XDIM][YDIM][ZDIM]) {
             cout << "Invalid coordinates, point not set" << endl;
         }
     }
+
+    delete point;
 }
