@@ -34,7 +34,7 @@ int main() {
     Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
     mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
     clearArray(*mfsim::heatSim);
-    // TODO: Need to set up the models and add them to the viewer using add_sim_cube
+    // TODO: Need to set up the models and add them to the viewer and Model grid using add_sim_cube
 
     // Allow users to enter heat data points
     enterDataPoints(*mfsim::heatSim);
