@@ -7,7 +7,7 @@
 #include <easy3d/renderer/camera.h>
 #include <easy3d/core/model.h>
 #include <easy3d/renderer/state.h>
-
+#include <3rd_party/glfw/include/GLFW/glfw3.h>
 
 class TransparencyViewer : public easy3d::Viewer
 {
@@ -17,6 +17,7 @@ public:
 protected:
  
     void draw() const override;
+    bool key_press_event(int key, int modifiers) override;
   
 private:
     easy3d::Transparency* transparency;

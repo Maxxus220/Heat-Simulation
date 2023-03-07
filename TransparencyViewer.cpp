@@ -29,4 +29,16 @@ void TransparencyViewer::draw() const {
 
     transparency->draw(surfaces);
 }
+
+bool TransparencyViewer::key_press_event(int key, int modifiers) {
+    if(key == GLFW_KEY_N) {
+        // Next step in simulation
+        update();
+        return true;
+    }
+    else {
+        return Viewer::key_press_event(key, modifiers);
+    }
+}
+
      
