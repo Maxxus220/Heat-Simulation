@@ -1,8 +1,7 @@
-CMakeFiles/HeatSim.dir/SimUtils.cpp.o: \
- /home/maxxus220/Projects/Heat-Simulation/SimUtils.cpp \
+CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
+ /home/maxxus220/Projects/Heat-Simulation/SimAlgos.cpp \
  /usr/include/stdc-predef.h \
- /home/maxxus220/Projects/Heat-Simulation/Parameters.h \
- /home/maxxus220/Projects/Heat-Simulation/SimUtils.h \
+ /home/maxxus220/Projects/Heat-Simulation/SimAlgos.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/model.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -293,17 +292,6 @@ CMakeFiles/HeatSim.dir/SimUtils.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/quat.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/polygon.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include/easy3d/core/export.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h \
- /home/maxxus220/Projects/Heat-Simulation/RenderUtils.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable_triangles.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/state.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/renderer.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/point_cloud.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/property.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/surface_mesh.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/random.h \
- /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
- /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h
+ /home/maxxus220/Projects/Heat-Simulation/Parameters.h \
+ /home/maxxus220/Projects/Heat-Simulation/SimUtils.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h

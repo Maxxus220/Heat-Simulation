@@ -296,6 +296,7 @@ CMakeFiles/HeatSim.dir/RenderUtils.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/property.h \
  /home/maxxus220/Projects/Heat-Simulation/RenderUtils.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h \
+ /home/maxxus220/Projects/Heat-Simulation/Parameters.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable_triangles.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/state.h \
@@ -305,5 +306,4 @@ CMakeFiles/HeatSim.dir/RenderUtils.cpp.o: \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h \
- /home/maxxus220/Projects/Heat-Simulation/Parameters.h
+ /usr/include/c++/11/bits/stl_numeric.h

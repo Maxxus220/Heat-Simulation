@@ -310,4 +310,7 @@ CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/camera.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/signal.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/frame.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/constraint.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/constraint.h \
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/3rd_party/glfw/include/GLFW/glfw3.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/include/KHR/khrplatform.h

@@ -296,20 +296,7 @@ CMakeFiles/HeatSim.dir/HeatSim.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/Resources.h \
  /home/maxxus220/Projects/Heat-Simulation/HeatSim.h \
  /home/maxxus220/Projects/Heat-Simulation/RenderUtils.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable_triangles.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/drawable.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/state.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/renderer.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/point_cloud.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/random.h \
- /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
- /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h \
  /home/maxxus220/Projects/Heat-Simulation/TransparencyViewer.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/dual_depth_peeling.h \
  /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/transparency.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/camera.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/signal.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/frame.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/constraint.h
+ /home/maxxus220/Projects/Heat-Simulation/SimUtils.h
