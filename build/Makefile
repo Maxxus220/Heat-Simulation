@@ -177,6 +177,30 @@ RenderUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/RenderUtils.cpp.s
 .PHONY : RenderUtils.cpp.s
 
+SimAlgos.o: SimAlgos.cpp.o
+.PHONY : SimAlgos.o
+
+# target to build an object file
+SimAlgos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimAlgos.cpp.o
+.PHONY : SimAlgos.cpp.o
+
+SimAlgos.i: SimAlgos.cpp.i
+.PHONY : SimAlgos.i
+
+# target to preprocess a source file
+SimAlgos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimAlgos.cpp.i
+.PHONY : SimAlgos.cpp.i
+
+SimAlgos.s: SimAlgos.cpp.s
+.PHONY : SimAlgos.s
+
+# target to generate assembly for a file
+SimAlgos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeatSim.dir/build.make CMakeFiles/HeatSim.dir/SimAlgos.cpp.s
+.PHONY : SimAlgos.cpp.s
+
 SimUtils.o: SimUtils.cpp.o
 .PHONY : SimUtils.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... RenderUtils.o"
 	@echo "... RenderUtils.i"
 	@echo "... RenderUtils.s"
+	@echo "... SimAlgos.o"
+	@echo "... SimAlgos.i"
+	@echo "... SimAlgos.s"
 	@echo "... SimUtils.o"
 	@echo "... SimUtils.i"
 	@echo "... SimUtils.s"

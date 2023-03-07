@@ -10,8 +10,6 @@
 #include "TransparencyViewer.h"
 #include "SimUtils.h"
 
-// #define EZ3D
-
 using namespace std;
 using namespace easy3d;
 using array_t = Model* (*) [XDIM][YDIM][ZDIM];
@@ -27,7 +25,11 @@ namespace mfsim {
 }
 
 int main() {
-#ifndef EZ3D
+    // Setup easy3D
+    easy3d::initialize();
+    TransparencyViewer viewer("Test");
+    viewer.set_background_color(BACKGROUND_COLOR);
+
     // Initialize 3d array to represent space (temp)
     Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
     mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
@@ -36,44 +38,25 @@ int main() {
     // Allow users to enter heat data points
     enterDataPoints(*mfsim::heatSim);
 
-    // Start simulation steps
-
-    // Calculate density at each point
-
-    // Spread heat proportionally (by difference) across neighbours
-
-    // Save "frame" of spread or render or both
-
-    // Check if max transfer was below simulation end threshold
-    // If so end simulation
-
-    // Repeat up to start simulation steps
-
-    // Allow for looking at history of simulation and playback
-#endif
-
-    initialize();
-    TransparencyViewer viewer("Test");
-
-    // Load in cube resource
-    if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
-        cout << "Failed to load model file" << endl;
-        return EXIT_FAILURE;
-    }
-
-    if(!add_cube(&viewer, 0, 0, 1)) {
-        return EXIT_FAILURE;
-    }
-
-    if(!add_cube(&viewer, 0, 0, 0)) {
-        return EXIT_FAILURE;
-    }
-
-    viewer.set_background_color(BACKGROUND_COLOR);
-
+    // Run easy3D (it will handle simulation with key events; see TransparencyViewer.cpp TransparencyViewer::key_press_event)
     return viewer.run();
+
+    // // Load in cube resource
+    // if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
+    //     cout << "Failed to load model file" << endl;
+    //     return EXIT_FAILURE;
+    // }
+
+    // if(!add_cube(&viewer, 0, 0, 1)) {
+    //     return EXIT_FAILURE;
+    // }
+
+    // if(!add_cube(&viewer, 0, 0, 0)) {
+    //     return EXIT_FAILURE;
+    // }
+
+
     
-    return EXIT_SUCCESS;
 }
 
 void clearArray(Model* (&array) [XDIM][YDIM][ZDIM]) {

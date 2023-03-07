@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HeatSim.dir/HeatSim.cpp.o.d"
   "CMakeFiles/HeatSim.dir/RenderUtils.cpp.o"
   "CMakeFiles/HeatSim.dir/RenderUtils.cpp.o.d"
+  "CMakeFiles/HeatSim.dir/SimAlgos.cpp.o"
+  "CMakeFiles/HeatSim.dir/SimAlgos.cpp.o.d"
   "CMakeFiles/HeatSim.dir/SimUtils.cpp.o"
   "CMakeFiles/HeatSim.dir/SimUtils.cpp.o.d"
   "CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o"

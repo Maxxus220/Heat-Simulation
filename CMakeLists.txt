@@ -10,6 +10,7 @@ SET(SOURCES
     "RenderUtils.cpp"
     "TransparencyViewer.cpp"
     "SimUtils.cpp"
+    "SimAlgos.cpp"
 )
 
 find_package(Easy3D COMPONENTS viewer REQUIRED) 
