@@ -15,9 +15,9 @@ void avgNeighbours(Model* (&array) [XDIM][YDIM][ZDIM]) {
     for(int i = 1; i < XDIM-1; i++) {
     for(int j = 1; j < YDIM-1; j++) {
     for(int k = 1; k < ZDIM-1; k++) {
-        newTemps[i][j][k] = max(min((
+        newTemps[i][j][k] = max(min(
             get_heat(i,j,k,array) +
-            get_heat(i+1,j,k,array) +
+            (get_heat(i+1,j,k,array) +
             get_heat(i-1,j,k,array) +
             get_heat(i,j+1,k,array) +
             get_heat(i,j-1,k,array) +
