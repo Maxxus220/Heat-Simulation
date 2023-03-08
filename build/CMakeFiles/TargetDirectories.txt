@@ -1,3 +1,0 @@
-/home/maxxus220/Projects/Heat-Simulation/build/CMakeFiles/HeatSim.dir
-/home/maxxus220/Projects/Heat-Simulation/build/CMakeFiles/edit_cache.dir
-/home/maxxus220/Projects/Heat-Simulation/build/CMakeFiles/rebuild_cache.dir
