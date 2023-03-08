@@ -49,7 +49,7 @@ void TransparencyViewer::draw() const {
 bool TransparencyViewer::key_press_event(int key, int modifiers) {
     if(key == GLFW_KEY_N) {
         // Next step in simulation
-        laplacian(*mfsim::g_heatSim);
+        avgNeighbours(*mfsim::g_heatSim);
         update();
         return true;
     }

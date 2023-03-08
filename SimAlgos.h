@@ -4,4 +4,4 @@
 #include "Parameters.h"
 
 
-void laplacian(easy3d::Model* (&array) [XDIM][YDIM][ZDIM]);
+void avgNeighbours(easy3d::Model* (&array) [XDIM][YDIM][ZDIM]);
