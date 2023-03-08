@@ -1874,4 +1874,7 @@ CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
+ /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/renderer/average_color_blending.h
+ /home/maxxus220/Projects/Heat-Simulation/Parameters.h
+ /home/maxxus220/Projects/Heat-Simulation/SimAlgos.h
 

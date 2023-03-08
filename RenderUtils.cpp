@@ -4,12 +4,14 @@
 #include <easy3d/core/surface_mesh.h>
 #include <easy3d/renderer/drawable_triangles.h>
 #include <easy3d/renderer/renderer.h>
+#include <easy3d/renderer/state.h>
 
 using namespace std;
 using namespace easy3d;
 
 void position_model(Model* model, int x, int y, int z);
 void make_model_transparent(Model* model);
+void enable_flat_lighting(Model* model);
 
 Model* add_cube(Viewer* viewer, int x, int y, int z) {
     SurfaceMesh* new_cube_mesh = new SurfaceMesh(mfresources::g_cube);
@@ -23,8 +25,9 @@ Model* add_cube(Viewer* viewer, int x, int y, int z) {
 
     position_model(new_cube, x, y, z);
 
-
     make_model_transparent(new_cube);
+
+    enable_flat_lighting(new_cube);
 
     dynamic_cast<SurfaceMesh*>(new_cube)->add_model_property<vec4>("Color", DEFAULT_COLOR);
     
@@ -45,5 +48,13 @@ void make_model_transparent(Model* model) {
     auto faces = model->renderer()->get_triangles_drawable("faces");
     if(faces) {
         faces->set_opacity(OPACITY); 
+    }
+}
+
+void enable_flat_lighting(Model* model) {
+    for(auto drawable : model->renderer()->triangles_drawables()) {
+        State::Material mat = drawable->material();
+        mat.shininess = 0.5f;
+        drawable->set_material(mat);
     }
 }

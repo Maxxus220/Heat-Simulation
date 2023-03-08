@@ -1868,8 +1868,13 @@ CMakeFiles/HeatSim.dir/TransparencyViewer.cpp.o: ../TransparencyViewer.cpp \
   ../gfx/Easy3D/3rd_party/glfw/include/GLFW/glfw3.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h
+  /usr/include/KHR/khrplatform.h \
+  ../gfx/Easy3D/easy3d/renderer/average_color_blending.h \
+  ../Parameters.h \
+  ../SimAlgos.h
 
+
+../gfx/Easy3D/easy3d/renderer/average_color_blending.h:
 
 /usr/include/KHR/khrplatform.h:
 

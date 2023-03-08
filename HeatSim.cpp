@@ -19,7 +19,7 @@ namespace mfresources {
 }
 
 namespace mfsim {
-    array_t heatSim;
+    array_t g_heatSim;
 
 }
 
@@ -36,26 +36,15 @@ int main() {
 
     // Initialize 3d array to represent space (temp)
     Model* (*heatSimRaw) = new Model*[XDIM*YDIM*ZDIM];
-    mfsim::heatSim = reinterpret_cast<array_t>(heatSimRaw);
-    clearArray(*mfsim::heatSim);
-    initializeArray(&viewer, *mfsim::heatSim);
+    mfsim::g_heatSim = reinterpret_cast<array_t>(heatSimRaw);
+    clearArray(*mfsim::g_heatSim);
+    initializeArray(&viewer, *mfsim::g_heatSim);
 
     // Allow users to enter heat data points
-    enterDataPoints(*mfsim::heatSim);
+    enterDataPoints(*mfsim::g_heatSim);
 
     // Run easy3D (it will handle simulation with key events; see TransparencyViewer.cpp TransparencyViewer::key_press_event)
     return viewer.run();
-
-    // if(!add_cube(&viewer, 0, 0, 1)) {
-    //     return EXIT_FAILURE;
-    // }
-
-    // if(!add_cube(&viewer, 0, 0, 0)) {
-    //     return EXIT_FAILURE;
-    // }
-
-
-    
 }
 
 void clearArray(Model* (&array) [XDIM][YDIM][ZDIM]) {
