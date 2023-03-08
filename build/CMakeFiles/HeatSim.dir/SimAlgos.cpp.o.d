@@ -2,7 +2,7 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /home/maxxus220/Projects/Heat-Simulation/SimAlgos.cpp \
  /usr/include/stdc-predef.h \
  /home/maxxus220/Projects/Heat-Simulation/SimAlgos.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/model.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/model.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -133,7 +133,7 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/types.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/types.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -144,7 +144,7 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/vec.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/vec.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
@@ -171,7 +171,7 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/11/limits \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/mat.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/mat.h \
  /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -183,7 +183,7 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/constant.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/constant.h \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -193,8 +193,8 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/util/logging.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/3rd_party/easyloggingpp/easylogging++.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/util/logging.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/3rd_party/easyloggingpp/easylogging++.h \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -283,15 +283,15 @@ CMakeFiles/HeatSim.dir/SimAlgos.cpp.o: \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/bitset \
  /usr/include/c++/11/stack /usr/include/c++/11/bits/stl_stack.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/rect.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/line.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/oriented_line.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/segment.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/plane.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/box.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/quat.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/core/polygon.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/Release/include/easy3d/core/export.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/rect.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/line.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/oriented_line.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/segment.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/plane.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/box.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/quat.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/core/polygon.h \
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/Release/include/easy3d/core/export.h \
  /home/maxxus220/Projects/Heat-Simulation/Parameters.h \
  /home/maxxus220/Projects/Heat-Simulation/SimUtils.h \
- /home/maxxus220/Projects/Heat-Simulation/gfx/Easy3D/easy3d/viewer/viewer.h
+ /home/maxxus220/Projects/Heat-Simulation/Easy3D/easy3d/viewer/viewer.h

@@ -3,7 +3,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 project(HeatSim LANGUAGES CXX)
 
-set(Easy3D_DIR ./gfx/Easy3D/Release/)
+set(Easy3D_DIR ./Easy3D/Release/)
 
 SET(SOURCES 
     "HeatSim.cpp"
