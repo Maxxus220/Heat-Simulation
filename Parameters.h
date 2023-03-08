@@ -1,6 +1,6 @@
-#define XDIM 10
-#define YDIM 10
-#define ZDIM 10
+#define XDIM 15
+#define YDIM 15
+#define ZDIM 15
 
 #define OPACITY 0.2
 
