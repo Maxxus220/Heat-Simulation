@@ -1,2 +1,0 @@
-glfw3
-Easy3D
