@@ -18,7 +18,6 @@ namespace mfsim {
 }
 
 TransparencyViewer::TransparencyViewer(const std::string& title) : Viewer(title) {
-    // transparency = new DualDepthPeeling(camera());
     transparency = new AverageColorBlending(camera());
 }
 
@@ -29,17 +28,9 @@ void TransparencyViewer::draw() const {
     // Build triangle list for drawing
     std::vector<TrianglesDrawable*> surfaces;
     for (auto model : models_) {
-        SurfaceMesh* surfaceMesh = dynamic_cast<SurfaceMesh*>(model);
         for (auto drawable : model->renderer()->triangles_drawables()) {
             if (drawable->type() == Drawable::DT_TRIANGLES)
                     surfaces.push_back(dynamic_cast<TrianglesDrawable*>(drawable));
-                    drawable->set_coloring_method(State::Method::UNIFORM_COLOR);
-                    if(surfaceMesh) {
-                        drawable->set_uniform_coloring(surfaceMesh->get_model_property<vec4>("Color")[0]);
-                    }
-                    else {
-                        drawable->set_uniform_coloring(vec4(1, 1, 1, 1));
-                    }
         }
     }
 

@@ -29,10 +29,35 @@ Model* add_cube(Viewer* viewer, int x, int y, int z) {
 
     enable_flat_lighting(new_cube);
 
-    dynamic_cast<SurfaceMesh*>(new_cube)->add_model_property<vec4>("Color", DEFAULT_COLOR);
+    set_model_coloring_method(new_cube, State::Method::UNIFORM_COLOR);
+    set_model_uniform_color(new_cube, DEFAULT_COLOR);
     
-
     return new_cube;
+}
+
+void set_model_coloring_method(Model* model, State::Method method) {
+    for(auto drawable : model->renderer()->triangles_drawables()) {
+        if (drawable->type() == Drawable::DT_TRIANGLES) {
+            drawable->set_coloring_method(method);
+        }
+    }
+}
+
+void set_model_uniform_color(Model* model, vec4 color) {
+    for(auto drawable : model->renderer()->triangles_drawables()) {
+        if (drawable->type() == Drawable::DT_TRIANGLES) {
+            drawable->set_color(color);
+        }
+    }
+}
+
+vec4 get_model_uniform_color(Model* model) {
+    for(auto drawable : model->renderer()->triangles_drawables()) {
+        if (drawable->type() == Drawable::DT_TRIANGLES) {
+            return drawable->color();
+        }
+    }
+    return vec4(-1,-1,-1,-1);
 }
 
 void position_model(Model* model, int x, int y, int z) {

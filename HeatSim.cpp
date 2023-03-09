@@ -36,6 +36,7 @@ int main() {
     easy3d::initialize();
     TransparencyViewer viewer("Heat Simulation");
     viewer.set_background_color(BACKGROUND_COLOR);
+    
     // Load in cube resource
     if(!io::load_ply("../resources/cube.ply", &mfresources::g_cube)) {
         cout << "Failed to load model file" << endl;

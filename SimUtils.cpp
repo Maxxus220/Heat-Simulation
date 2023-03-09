@@ -21,24 +21,17 @@ Model* add_sim_cube(Viewer* viewer, int x, int y, int z, Model* (&grid) [XDIM][Y
 }
 
 void set_heat(float heat, int x, int y, int z, Model* (&grid) [XDIM][YDIM][ZDIM]) {
-    SurfaceMesh* cube = dynamic_cast<SurfaceMesh*>(grid[x][y][z]);
-
-    cube->remove_model_property("Color");
-    cube->add_model_property<vec4>("Color", vec4(convert_heat_to_red(heat), 0, 0, 1));
+    set_model_uniform_color(grid[x][y][z], vec4(convert_heat_to_red(heat), 0, 0, 1));
 }
 
 float get_heat(int x, int y, int z, Model* (&grid) [XDIM][YDIM][ZDIM]) {
-    SurfaceMesh* cube = dynamic_cast<SurfaceMesh*>(grid[x][y][z]);
-    
-    return convert_red_to_heat(cube->get_model_property<vec4>("Color")[0].r);
+    return convert_red_to_heat(get_model_uniform_color(grid[x][y][z]).r);
 }
 
 float convert_red_to_heat(float red) {
-    // return ((red-0.1f) / 0.9f) * 100;
     return red * 100;
 }
 
 float convert_heat_to_red(float heat) {
-    // return ((heat / 100) * 0.9f) + 0.1f;
     return heat / 100;
 }
