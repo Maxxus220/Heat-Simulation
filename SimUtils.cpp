@@ -34,9 +34,11 @@ float get_heat(int x, int y, int z, Model* (&grid) [XDIM][YDIM][ZDIM]) {
 }
 
 float convert_red_to_heat(float red) {
-    return ((red-0.1f) / 0.9f) * 100;
+    // return ((red-0.1f) / 0.9f) * 100;
+    return red * 100;
 }
 
 float convert_heat_to_red(float heat) {
-    return ((heat / 100) * 0.9f) + 0.1f;
+    // return ((heat / 100) * 0.9f) + 0.1f;
+    return heat / 100;
 }
