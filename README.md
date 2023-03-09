@@ -50,7 +50,7 @@ Now you should be able to build the project. To do so, open the terminal in the 
 
     mkdir build
     cd ./build
-    cmake ..
+    cmake -DCMAKE_BUILD_TYPE=Release ..
     make
 
 This should create the executable HeatSim. Simply run HeatSim.
