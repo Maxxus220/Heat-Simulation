@@ -61,3 +61,6 @@ When you run HeatSim, the program will first ask you to enter coordinates and te
 
 
 NOTE: When entering starting values, the outermost layer of the space will never change values (this is to avoid index out of bounds when simulating). Additionally, cubes will only consider the cubes directly touching them (no diagonals), so starting values set on the outer edges of the space will have no effect on simulation (i.e. In a 15x15x15 space, setting the cube at x: 14, y: 14, z: 14 to have a temperature of 100 will have no effect).
+
+
+![alt text](https://i.imgur.com/VwFYCy4.png)
